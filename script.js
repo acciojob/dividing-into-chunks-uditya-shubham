@@ -19,7 +19,7 @@ const divide = (arr, n) => {
 
 			else{
 				ans.push(tempArr);
-				tempArr=arr[i];
+				tempArr=[arr[i]];
 				currSum=arr[i];
 
 			}
