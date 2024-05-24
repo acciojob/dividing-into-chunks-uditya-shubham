@@ -13,6 +13,7 @@ const divide = (arr, n) => {
 	subsum=parseInt(subsum);
 	
 	let ans=[];
+
 	for(let i=0; i<n ; i++)
 		{
 			let tempArr=[];
@@ -23,9 +24,13 @@ const divide = (arr, n) => {
 					tempArr.push(arr[i]);
 					tempsum+=arr[i];
 					i++;
+                    if(tempsum>=subsum)
+                        {
+                            i--;
+                        }
 					
 				}
-			i--;
+			// i--;
 			ans.push(tempArr);
 			
 		}
