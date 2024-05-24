@@ -9,7 +9,7 @@ const divide = (arr, n) => {
 			
 		}
 
-	let subsum=sum/s;
+	let subsum=sum/n;
 	subsum=parseInt(subsum);
 	
 	let ans=[];
