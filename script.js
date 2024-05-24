@@ -5,7 +5,7 @@ const divide = (arr, n) => {
    
   let currSum =0;
   let ans=[];
-  let tempArr = [];
+  let tempArr=[];
   
   for (let i=0; i<arr.length; i++)
 	{
