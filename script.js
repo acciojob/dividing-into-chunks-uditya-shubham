@@ -32,6 +32,7 @@ const divide = (arr, n) => {
 					if(tempsum==subsum)
 					{
 						tempArr.push(arr[i]);
+						i--;
 						break;
 					}
 
