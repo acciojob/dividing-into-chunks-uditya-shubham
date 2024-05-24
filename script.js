@@ -27,12 +27,15 @@ const divide = (arr, n) => {
                     if(tempsum>subsum)
                         {
 							break;
+							i--;
                         }
 					if(tempsum==subsum)
 					{
 						tempArr.push(arr[i]);
 						break;
 					}
+
+					
 					tempArr.push(arr[i]);
 					i++;
 					
