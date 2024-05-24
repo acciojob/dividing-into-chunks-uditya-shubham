@@ -21,13 +21,20 @@ const divide = (arr, n) => {
 
 			while(tempsum<=subsum)
 				{
-					tempArr.push(arr[i]);
+					
 					tempsum+=arr[i];
-					i++;
-                    if(tempsum>=subsum)
+					
+                    if(tempsum>subsum)
                         {
-                            i--;
+							break;
                         }
+					if(tempsum==subsum)
+					{
+						tempArr.push(arr[i]);
+						break;
+					}
+					tempArr.push(arr[i]);
+					i++;
 					
 				}
 			// i--;
